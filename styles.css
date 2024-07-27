@@ -328,9 +328,11 @@ ul {
         width: 45%;
         margin-bottom: 0;
     }
+   
 }
 
 @media (max-width: 767px) {
+    
     .hamburger {
         display: block;
     }
@@ -389,8 +391,15 @@ ul {
         flex: 1;
     }
 
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+   
+}
+
     .hero-image img {
-        max-width: 100%;
+        max-width: 80%;
         border-radius: 10px;
     }
 }
@@ -404,6 +413,5 @@ ul {
         display: flex;
 
     }
-
 
 }
