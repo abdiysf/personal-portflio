@@ -4,48 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdirahman Abdisalam Yusuf</title>
+    <title>Your Portfolio</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Your CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
             <div class="container">
                 <div class="logo">
-                    <h1><a href="#">Abdirahman </a></h1>
+                    <h1><a href="#">Abdirahman</a></h1>
                 </div>
-                <ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="nav-btn"><a href="#contact" class="btn-talk">Let's Talk</a></li>
                 </ul>
-                <a href="#contact" class="btn-talk">Let's Talk</a>
             </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Hello I'm <span>Abdirahman Abdisalam Yusuf</span></h1>
-                <p>I specialize in developing cutting-edge iOS applications that provide seamless and engaging user
+                <h1>Hello I'm <span>Abdirahman Abdisalam</span></h1>
+                <p>I specialize in developing iOS applications that provide seamless and engaging user
                     experiences.</p>
-                <a href="#projects" class="btn">How I Work</a>
+                <a href="https://1drv.ms/b/s!AiOMxEfz0Cj3gbkhxQdFetRDvPwmjw?e=PTXl3f" class="btn">Resume</a>
             </div>
             <div class="hero-image">
                 <img src="assets/image2.jpg" alt="Abdirahman Abdisalam Yusuf">
             </div>
         </div>
     </section>
-
 
     <section id="about" class="section">
         <div class="container">
@@ -54,20 +55,6 @@
                 built numerous iOS applications using SwiftUI and UIKit. My current role at one of the best banks in
                 Somalia involves developing a fintech application and contributing to the first mobile wallet in
                 Somalia.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-item">Angular</div>
-                <div class="skill-item">React</div>
-                <div class="skill-item">iOS Development (SwiftUI & UIKit)</div>
-                <div class="skill-item">HTML & CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">UI/UX Design (Figma)</div>
-            </div>
         </div>
     </section>
 
@@ -83,29 +70,45 @@
         </div>
     </section>
 
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">Angular</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">iOS Development (SwiftUI & UIKit)</div>
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">UI/UX Design (Figma)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container contact-content">
             <div class="contact-info">
                 <h2>Contact <span>Us</span></h2>
-                <!-- <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.</p> -->
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.</p>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Maka Al Mukarama Street, Mogadishu, Somalia</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Royal Ln. Mesa, New Jersey 45463</li>
                     <li><i class="fas fa-envelope"></i> <a
-                            href="mailto:mustafeabdisalam@gmail.Com">mustafeabdisalam@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> +252614492522</li>
+                            href="mailto:Myportfy1234@Gmail.Com">Myportfy1234@Gmail.Com</a></li>
+                    <li><i class="fas fa-phone"></i> +12345 67890</li>
                     <li><i class="fas fa-globe"></i> <a href="https://www.Myportfy.Com"
-                            target="_blank">abdirahmanyusuf.com</a></li>
+                            target="_blank">www.Myportfy.Com</a></li>
                 </ul>
                 <p>Share Social Media</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
                 </div>
             </div>
             <div class="contact-form">
-                <h4>Add <span>Details</span></h4>
+                <h2>Add <span>Details</span></h2>
                 <form action="#">
                     <div class="input-group">
                         <input type="text" name="name" placeholder="Name" required>
@@ -126,11 +129,14 @@
     </section>
 
 
+    <!-- Your existing content here -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Abdirahman Abdisalam Yusuf</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
